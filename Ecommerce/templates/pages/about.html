@@ -1,1 +1,143 @@
-<h1>This is from about</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Light Slate 50 */
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <div class="min-h-screen flex flex-col">
+        <header class="bg-white shadow-sm p-4 md:p-6 flex items-center justify-between">
+            <div class="text-2xl font-bold text-gray-800 rounded-md">BrandLogo</div>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#" class="text-gray-600 hover:text-indigo-600 transition-colors duration-200 rounded-md">Home</a>
+                <a href="#" class="text-gray-600 hover:text-indigo-600 transition-colors duration-200 rounded-md">Shop</a>
+                <a href="#" class="text-gray-600 hover:text-indigo-600 transition-colors duration-200 rounded-md">Categories</a>
+                <a href="#" class="text-indigo-600 font-semibold transition-colors duration-200 rounded-md">About Us</a>
+                <a href="#" class="text-gray-600 hover:text-indigo-600 transition-colors duration-200 rounded-md">Contact</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <button class="p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors duration-200">
+                    <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                </button>
+                <button class="p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors duration-200 relative">
+                    <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                    <span class="absolute top-0 right-0 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-red-100 bg-red-600 rounded-full">3</span>
+                </button>
+                <button class="md:hidden p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors duration-200">
+                    <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+            </div>
+        </header>
+
+        <main class="flex-grow container mx-auto px-4 py-8">
+            <h1 class="text-4xl font-extrabold text-gray-800 mb-8 text-center">About Our Brand</h1>
+
+            <section class="bg-white rounded-xl shadow-md p-6 md:p-8 mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Our Mission</h2>
+                <p class="text-gray-700 text-lg leading-relaxed text-center max-w-3xl mx-auto">
+                    At **BrandLogo**, our mission is to provide a seamless and enjoyable online shopping experience, offering a curated selection of high-quality products that enrich the lives of our customers. We are committed to exceptional customer service, innovative technology, and sustainable practices.
+                </p>
+            </section>
+
+            <section class="flex flex-col md:flex-row items-center gap-8 mb-12">
+                <div class="w-full md:w-1/2">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">Our Story</h2>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Founded in 20XX, **BrandLogo** started with a simple vision: to create an online destination where quality meets convenience. What began as a small passion project quickly grew into a thriving e-commerce platform, driven by our dedication to sourcing unique and reliable products from around the globe.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        Over the years, we've expanded our product categories, embraced cutting-edge technology to enhance user experience, and built a community of loyal customers. We believe in continuous improvement and are always listening to your feedback to make **BrandLogo** even better.
+                    </p>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <img src="https://placehold.co/600x400/D1E7FF/27272A?text=Our+Story+Image" alt="Our Story" class="w-full h-auto rounded-xl shadow-lg">
+                </div>
+            </section>
+
+            <section class="bg-white rounded-xl shadow-md p-6 md:p-8 mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Our Values</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="text-center">
+                        <svg class="w-16 h-16 mx-auto text-indigo-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.007 12.007 0 002.944 12c0 2.898 1.144 5.674 3.197 7.727a12.007 12.007 0 0017.032 0A12.007 12.007 0 0021.056 12c0-2.898-1.144-5.674-3.197-7.727z"></path></svg>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Quality</h3>
+                        <p class="text-gray-600">We meticulously select products that meet our high standards for durability, functionality, and design.</p>
+                    </div>
+                    <div class="text-center">
+                    <!-- New “heart” SVG icon -->
+                    <svg class="w-16 h-16 mx-auto text-indigo-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                        d="M12 21s-8-6.693-8-11 3.582-6 8-6 8 3.357 8 6-8 11-8 11z" />
+                    </svg>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Customer Focus</h3>
+                    <p class="text-gray-600">Your satisfaction is our priority. We strive to provide exceptional support and a seamless shopping journey.</p>
+                    </div>
+
+                    <div class="text-center">
+  <!-- New “rocket” SVG icon -->
+  <svg class="w-16 h-16 mx-auto text-indigo-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="1.5"
+      d="M12.552 2.11a1 1 0 00-1.104 0l-7 4.2A1 1 0 004 7.2v3.086a1 1 0 01-.293.707l-1.914 1.914a1 1 0 000 1.414l5.657 5.657a1 1 0 001.414 0l1.914-1.914a1 1 0 01.707-.293H16.8a1 1 0 00.894-.553l4.2-7a1 1 0 000-1.104l-4.2-7zM12 10a2 2 0 100 4 2 2 0 000-4z"
+    />
+  </svg>
+  <h3 class="text-xl font-semibold text-gray-800 mb-2">Innovation</h3>
+  <p class="text-gray-600">
+    We continuously explore new technologies and trends to enhance your online shopping experience.
+  </p>
+</div>
+
+                </div>
+            </section>
+
+            <section class="text-center">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6">Ready to explore?</h2>
+                <a href="#" class="inline-block bg-indigo-600 text-white py-3 px-8 rounded-full text-lg font-semibold hover:bg-indigo-700 transition-colors duration-200 shadow-md transform hover:scale-105">
+                    Shop Our Collection
+                </a>
+            </section>
+        </main>
+
+        <footer class="bg-gray-800 text-white p-8 mt-12 rounded-t-xl">
+            <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">BrandLogo</h3>
+                    <p class="text-gray-400">Your one-stop shop for everything you need.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-200 rounded-md">Shop All</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-200 rounded-md">New Arrivals</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-200 rounded-md">Sale</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-200 rounded-md">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                    <p class="text-gray-400">Email: info@brandlogo.com</p>
+                    <p class="text-gray-400">Phone: +1 (123) 456-7890</p>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33V22C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"></path></svg></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2.417a.75.75 0 01.07.867 6.75 6.75 0 00-3.08 4.316.75.75 0 11-1.331-.766 8.25 8.25 0 013.65 6.138v5.565a.75.75 0 01-1.5 0v-5.565a.75.75 0 01-1.5 0v.75a.75.75 0 01-1.5 0V8.25a.75.75 0 011.5 0v.75a.75.75 0 011.5 0V6.75a.75.75 0 011.5 0v1.5a.75.75 0 011.5 0V3.37a.75.75 0 01.86-.07z" clip-rule="evenodd"></path></svg></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33V22C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"></path></svg></a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center text-gray-500 mt-8 pt-8 border-t border-gray-700">
+                &copy; 2025 BrandLogo. All rights reserved.
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
