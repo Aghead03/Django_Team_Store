@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Light Slate 50 */
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <div class="min-h-screen flex flex-col">
+        <header class="bg-white shadow-sm p-4 md:p-6 flex items-center justify-between">
+            <div class="text-2xl font-bold text-gray-800 rounded-md">BrandLogo</div>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#" class="text-gray-600 hover:text-indigo-600 transition-colors duration-200 rounded-md">Home</a>
+                <a href="#" class="text-indigo-600 font-semibold transition-colors duration-200 rounded-md">Shop</a>
+                <a href="#" class="text-gray-600 hover:text-indigo-600 transition-colors duration-200 rounded-md">Categories</a>
+                <a href="#" class="text-gray-600 hover:text-indigo-600 transition-colors duration-200 rounded-md">About Us</a>
+                <a href="#" class="text-gray-600 hover:text-indigo-600 transition-colors duration-200 rounded-md">Contact</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <button class="p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors duration-200">
+                    <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                </button>
+                <button class="p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors duration-200 relative">
+                    <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                    <span class="absolute top-0 right-0 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-red-100 bg-red-600 rounded-full">3</span>
+                </button>
+                <button class="md:hidden p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors duration-200">
+                    <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+            </div>
+        </header>
+
+        <main class="flex-grow container mx-auto px-4 py-8">
+            <div class="flex flex-col md:flex-row gap-8 bg-white rounded-xl shadow-md p-6 md:p-8">
+                <div class="w-full md:w-1/2 flex flex-col items-center">
+                    <img src="https://placehold.co/600x450/E0F2F7/27272A?text=Main+Product+Image" alt="Main Product Image" class="w-full h-auto rounded-xl shadow-lg mb-4 object-cover">
+                    <div class="flex space-x-4 overflow-x-auto pb-2">
+                        <img src="https://placehold.co/100x75/E0F2F7/27272A?text=Thumb1" alt="Thumbnail 1" class="w-24 h-18 rounded-lg border-2 border-indigo-600 cursor-pointer object-cover">
+                        <img src="https://placehold.co/100x75/E0F2F7/27272A?text=Thumb2" alt="Thumbnail 2" class="w-24 h-18 rounded-lg border-2 border-transparent hover:border-indigo-600 cursor-pointer object-cover">
+                        <img src="https://placehold.co/100x75/E0F2F7/27272A?text=Thumb3" alt="Thumbnail 3" class="w-24 h-18 rounded-lg border-2 border-transparent hover:border-indigo-600 cursor-pointer object-cover">
+                        <img src="https://placehold.co/100x75/E0F2F7/27272A?text=Thumb4" alt="Thumbnail 4" class="w-24 h-18 rounded-lg border-2 border-transparent hover:border-indigo-600 cursor-pointer object-cover">
+                    </div>
+                </div>
+
+                <div class="w-full md:w-1/2">
+                    <h1 class="text-4xl font-extrabold text-gray-800 mb-2">Premium Noise-Cancelling Headphones</h1>
+                    <p class="text-gray-600 text-lg mb-4">Brand: AudioTech</p>
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.538 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.783.57-1.838-.197-1.538-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.381-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.538 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.783.57-1.838-.197-1.538-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.381-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.538 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.783.57-1.838-.197-1.538-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.381-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.538 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.783.57-1.838-.197-1.538-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.381-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5 text-gray-300" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.538 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.783.57-1.838-.197-1.538-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.381-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z"></path></svg>
+                        </div>
+                        <span class="ml-2 text-gray-600">(150 Reviews)</span>
+                    </div>
+
+                    <p class="text-gray-700 text-base leading-relaxed mb-6">
+                        Experience unparalleled audio quality with these premium noise-cancelling headphones. Designed for comfort and immersive sound, they are perfect for travel, work, or simply enjoying your favorite music without distraction.
+                    </p>
+
+                    <div class="mb-6">
+                        <span class="text-5xl font-extrabold text-indigo-600">$129.99</span>
+                        <span class="text-xl text-gray-500 line-through ml-3">$149.99</span>
+                    </div>
+
+                    <div class="mb-6">
+                        <h3 class="text-lg font-semibold text-gray-700 mb-3">Color: <span class="font-normal">Black</span></h3>
+                        <div class="flex space-x-3">
+                            <button class="w-8 h-8 rounded-full bg-black border-2 border-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"></button>
+                            <button class="w-8 h-8 rounded-full bg-gray-400 border-2 border-transparent focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"></button>
+                            <button class="w-8 h-8 rounded-full bg-blue-600 border-2 border-transparent focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"></button>
+                        </div>
+                    </div>
+
+                    <div class="mb-8">
+                        <h3 class="text-lg font-semibold text-gray-700 mb-3">Quantity:</h3>
+                        <div class="flex items-center space-x-3">
+                            <button class="bg-gray-200 text-gray-700 w-10 h-10 flex items-center justify-center rounded-full hover:bg-gray-300 transition-colors duration-200 text-xl font-bold">-</button>
+                            <span class="text-2xl font-semibold text-gray-800">1</span>
+                            <button class="bg-gray-200 text-gray-700 w-10 h-10 flex items-center justify-center rounded-full hover:bg-gray-300 transition-colors duration-200 text-xl font-bold">+</button>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button class="flex-1 bg-indigo-600 text-white py-4 rounded-full text-lg font-semibold hover:bg-indigo-700 transition-colors duration-200 shadow-lg transform hover:scale-105">
+                            Add to Cart
+                        </button>
+                        <button class="flex-1 bg-white text-indigo-600 border border-indigo-600 py-4 rounded-full text-lg font-semibold hover:bg-indigo-50 transition-colors duration-200 shadow-lg transform hover:scale-105">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 bg-white rounded-xl shadow-md p-6 md:p-8">
+                <div class="border-b border-gray-200 mb-6">
+                    <nav class="-mb-px flex space-x-8" aria-label="Tabs">
+                        <a href="#" class="border-b-2 border-indigo-500 py-4 px-1 text-center text-sm font-medium text-indigo-600">Description</a>
+                        <a href="#" class="border-b-2 border-transparent py-4 px-1 text-center text-sm font-medium text-gray-500 hover:text-gray-700 hover:border-gray-300">Specifications</a>
+                        <a href="#" class="border-b-2 border-transparent py-4 px-1 text-center text-sm font-medium text-gray-500 hover:text-gray-700 hover:border-gray-300">Reviews (150)</a>
+                    </nav>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Product Description</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        These headphones are engineered for an unparalleled listening experience. Featuring advanced active noise cancellation technology, they effectively block out ambient sounds, allowing you to immerse yourself fully in your audio. The ergonomic design ensures a comfortable fit for extended periods, making them ideal for long flights, commutes, or focused work sessions.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        With high-fidelity audio drivers, you'll enjoy crisp highs, rich mids, and deep, resonant bass. The built-in microphone provides crystal-clear voice calls, and intuitive controls allow for easy management of music and calls. Crafted from premium, durable materials, these headphones are built to last and designed to impress.
+                    </p>
+                </div>
+            </div>
+        </main>
+
+        <footer class="bg-gray-800 text-white p-8 mt-12 rounded-t-xl">
+            <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">BrandLogo</h3>
+                    <p class="text-gray-400">Your one-stop shop for everything you need.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-200 rounded-md">Shop All</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-200 rounded-md">New Arrivals</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-200 rounded-md">Sale</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-200 rounded-md">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                    <p class="text-gray-400">Email: info@brandlogo.com</p>
+                    <p class="text-gray-400">Phone: +1 (123) 456-7890</p>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33V22C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"></path></svg></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2.417a.75.75 0 01.07.867 6.75 6.75 0 00-3.08 4.316.75.75 0 11-1.331-.766 8.25 8.25 0 013.65 6.138v5.565a.75.75 0 01-1.5 0v-5.565a.75.75 0 01-1.5 0v.75a.75.75 0 01-1.5 0V8.25a.75.75 0 011.5 0v.75a.75.75 0 011.5 0V6.75a.75.75 0 011.5 0v1.5a.75.75 0 011.5 0V3.37a.75.75 0 01.86-.07z" clip-rule="evenodd"></path></svg></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33V22C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"></path></svg></a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center text-gray-500 mt-8 pt-8 border-t border-gray-700">
+                &copy; 2025 BrandLogo. All rights reserved.
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
